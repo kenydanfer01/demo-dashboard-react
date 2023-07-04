@@ -1,8 +1,13 @@
 export const ItemsMenuData = [
   {
     title: 'Dashboard',
-    href: '#',
+    href: '/dashboard',
     iconClass: 'fa-solid fa-house',
+  },
+  {
+    title: 'Employed',
+    href: '/create/employed',
+    iconClass: 'fa-solid fa-users',
   },
   {
     title: 'Reports',

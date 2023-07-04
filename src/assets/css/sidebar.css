@@ -71,7 +71,9 @@ nav{
     height: 100%;
     width: 250px;
     padding: 10px 14px;
-    background-color: var(--panel-color);
+    background-color: #1e1e2d;
+    
+    /* background-color: var(--panel-color); */
     border-right: 1px solid var(--border-color);
     transition: var(--tran-05);
 }
@@ -90,13 +92,14 @@ nav .logo-image{
 nav .logo-image img{
     width: 40px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 nav .logo-name .logo_name{
     font-size: 22px;
     font-weight: 600;
-    color: var(--text-color);
+    color: #ffffff;
+    /* color: var(--text-color); */
     margin-left: 14px;
     transition: var(--tran-05);
 }
@@ -131,7 +134,8 @@ nav .menu-items{
     background-color: var(--primary-color);
 }
 body.dark li a:hover:before{
-    background-color: var(--text-color);
+    /* background-color: var(--text-color); */
+    background-color: white;
 }
 .menu-items li a i{
     font-size: 24px;
@@ -141,11 +145,13 @@ body.dark li a:hover:before{
     align-items: center;
     justify-content: center;
     color: var(--black-light-color);
+    color: #9d9da6;
 }
 .menu-items li a .link-name{
     font-size: 18px;
     font-weight: 400;
-    color: var(--black-light-color);    
+    color: #9d9da6;  
+    /* color: var(--black-light-color);     */
     transition: var(--tran-05);
 }
 nav.close li a .link-name{

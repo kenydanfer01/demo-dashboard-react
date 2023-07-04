@@ -1,20 +1,18 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from '../pages/Home';
-import Reports from '../pages/Reports';
-import Products from '../pages/Products';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Dashboard from "../pages/Dashboard";
+import CreateEmployed from "../pages/CreateEmployed";
 
 function ContentMainRoutes() {
-    return (
-        <>
-          <Router>
-            <Switch>
-              <Route path='/' exact component={Home} />
-              <Route path='/reports' component={Reports} />
-              <Route path='/products' component={Products} />
-            </Switch>
-          </Router>
-        </>
-      );
+  return (
+    <div>
+      <Router>
+        <Switch>
+          <Route path="/dashboard" exact component={Dashboard} />
+          <Route path="/create/employed" component={CreateEmployed} />
+        </Switch>
+      </Router>
+    </div>
+  );
 }
 
-export default ContentMainRoutes
+export default ContentMainRoutes;

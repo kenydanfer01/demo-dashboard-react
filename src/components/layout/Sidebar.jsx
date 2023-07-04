@@ -1,7 +1,8 @@
 import "../../assets/css/sidebar.css";
 import { useState } from "react";
-import ContentMainRoutes from "../../routes/ContentMainRoutes";
+import FormPerfil from "../FormPerfil";
 import { ItemsMenuData } from "../data/ItemsMenuData";
+import ContentMainRoutes from "../../routes/ContentMainRoutes";
 
 function Sidebar() {
   const [sidebar, setSidebar] = useState(true);
@@ -10,7 +11,9 @@ function Sidebar() {
   return (
     <>
       <nav className={sidebar ? "p-0" : "p-0 close"}>
-        <div className={sidebar ? "logo-name pt-3 px-3" : "logo-name pt-1 px-3"}>
+        <div
+          className={sidebar ? "logo-name pt-3 px-3" : "logo-name pt-1 px-3"}
+        >
           <div className="logo-image">
             <img src="../src/assets/images/mdpLogo.jpg" alt="" />
           </div>
@@ -46,7 +49,7 @@ function Sidebar() {
           </ul>
         </div>
       </nav>
-      <section className="dashboard">
+      <section className="dashboard bg-main">
         <div className="top">
           <i className="fa-solid fa-bars fa-2xl" onClick={showSidebar}></i>
           <div className="search-box">
@@ -55,12 +58,13 @@ function Sidebar() {
           </div>
           <img src="../src/assets/images/perfil2.jpg" alt="" />
         </div>
+
         <div className="dash-content">
-          <div className="overview">
-          </div>
-          <div className="activity">
-            
-          </div>
+          <div className="overview"></div>
+          <div className="activity"></div>
+        </div>
+        <div>
+          <ContentMainRoutes />
         </div>
       </section>
     </>
