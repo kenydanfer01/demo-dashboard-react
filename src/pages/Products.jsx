@@ -3,7 +3,7 @@ function Products() {
   return (
     <>
       <div className="table-responsive">
-  <table className="table table-striped">
+  <table className="table table-striped " >
     <thead>
       <tr>
         <th>Columna 1</th>
