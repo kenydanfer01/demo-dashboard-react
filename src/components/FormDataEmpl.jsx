@@ -1,8 +1,8 @@
 export const FormDataEmpl = () => {
     return (
         <>
-            <div className="container bg-light ">
-                <div className="col-md-12 col-lg-12 border border-2 border-secondary rounded-3 my-4">
+            <div className="container-fluid border rounded bg-light p-0">
+                <div className="col-md-12 col-lg-12 border rounded-3">
                     <div className="row m-4">
                         {/* Seccion 1 */}
                         <h3>Datos del trabajador</h3>
