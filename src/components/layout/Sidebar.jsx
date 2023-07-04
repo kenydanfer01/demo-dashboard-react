@@ -23,12 +23,6 @@ function Sidebar() {
                 <span className="link-name">Dahsboard</span>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <i className="m-2 fa-solid fa-house"></i>
-                <span className="link-name">Dahsboard</span>
-              </a>
-            </li>
           </ul>
           <ul className="logout-mode">
             <li className="mode">
@@ -83,7 +77,7 @@ function Sidebar() {
             </div>
             <div className="activity">
               <ContentMainRoutes />
-                <div className="title">
+                {/* <div className="title">
                     <i className="uil uil-clock-three"></i>
                     <span className="text">Recent Activity</span>
                 </div>
@@ -138,7 +132,7 @@ function Sidebar() {
                         <span className="data-list">Liked</span>
                         <span className="data-list">Liked</span>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     </section>
