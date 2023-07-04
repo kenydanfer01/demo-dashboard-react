@@ -1,6 +1,7 @@
 import "../../assets/css/sidebar.css";
 import { useState } from "react";
 import ContentMainRoutes from "../../routes/ContentMainRoutes";
+import { ItemsMenuData } from "../data/ItemsMenuData";
 
 function Sidebar() {
   const [sidebar, setSidebar] = useState(true);
@@ -17,18 +18,16 @@ function Sidebar() {
         </div>
         <div className="menu-items">
           <ul className="p-0 nav-links">
-            <li>
-              <a href="#">
-                <i className="m-2 fa-solid fa-house"></i>
-                <span className="link-name">Dahsboard</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="m-2 fa-solid fa-house"></i>
-                <span className="link-name">Dahsboard</span>
-              </a>
-            </li>
+            {ItemsMenuData.map((item, index) => {
+              return (
+                <li key={index}>
+                  <a href={item.href}>
+                    <i className={item.iconClass + ' m-3'}></i>
+                    <span className="link-name">{item.title}</span>
+                  </a>
+                </li>
+              )
+            })}
           </ul>
           <ul className="logout-mode">
             <li className="mode">
