@@ -9,7 +9,7 @@
 
 :root{
     /* ===== Colors ===== */
-    --primary-color: #0E4BF1;
+    --primary-color: #ffffff;
     --panel-color: #FFF;
     --text-color: #000;
     --black-light-color: #707070;
@@ -56,12 +56,12 @@ body.dark{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #0b3cc1;
+    background: #ffffff;
 }
 
 body.dark::-webkit-scrollbar-thumb:hover,
 body.dark .activity-data::-webkit-scrollbar-thumb:hover{
-    background: #3A3B3C;
+    background: #ffffff;
 }
 
 nav{
@@ -131,7 +131,8 @@ nav .menu-items{
     height: 5px;
     width: 5px;
     border-radius: 50%;
-    background-color: var(--primary-color);
+    background-color: #FFFFFF;
+    /* background-color: var(--primary-color); */
 }
 body.dark li a:hover:before{
     /* background-color: var(--text-color); */
@@ -164,7 +165,8 @@ nav.close li a .link-name{
 }
 body.dark .nav-links li a:hover i,
 body.dark .nav-links li a:hover .link-name{
-    color: var(--text-color);
+    color: #FFFFFF;
+    /* color: var(--text-color); */
 }
 .menu-items .logout-mode{
     padding-top: 10px;
