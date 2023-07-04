@@ -19,7 +19,7 @@ function Home() {
               </thead>
               <tbody>
                 <tr>
-                  <td>John</td>
+                  <td>KENY DANFER</td>
                   <td>Doe</td>
                   <td>johndoe@example.com</td>
                   <td>123456789</td>
