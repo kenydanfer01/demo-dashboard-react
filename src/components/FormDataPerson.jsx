@@ -4,7 +4,7 @@ export const FormDataPerson = () => {
       <div className="bg-light m-5">
         <form>
           <div className="container row mx-auto justify-content-around">
-          <h5 className="text-start my-4">Datos de Nacimiento</h5>
+            <h5 className="text-start my-4">Datos de Nacimiento</h5>
             <div className="col-auto ">
               <label className="form-label">Fecha de Nacimiento</label>
               <input
@@ -24,7 +24,7 @@ export const FormDataPerson = () => {
           </div>
 
           <div className="container row mx-auto justify-content-around ">
-          <h5 className="text-start my-4">Domicilio y Referencia</h5>
+            <h5 className="text-start my-4">Domicilio y Referencia</h5>
             <div className="col-auto">
               <div className="mb-3">
                 <label className="form-label">Nacionalidad</label>

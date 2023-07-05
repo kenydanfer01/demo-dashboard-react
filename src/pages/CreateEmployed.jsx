@@ -3,6 +3,7 @@ import { FormDataEmpl } from "../components/FormDataEmpl";
 import { FormDataPerson } from "../components/FormDataPerson";
 import FormPerfil from "../components/FormPerfil";
 import { FormDataOtros } from "../components/FormDataOtros";
+import { FormContact } from "../components/FormContact";
 
 function CreateEmployed() {
   const [activeButton, setActiveButton] = useState(1);
@@ -35,15 +36,24 @@ function CreateEmployed() {
               <button
                 className={`btn btn-success btn-md border ${
                   activeButton === 3 ? "btn-success" : "btn-light"
-                } flex-fill`}
+                } flex-fill me-2`}
                 onClick={() => handleButtonClick(3)}
+              >
+                Datos Laborales
+              </button>
+              <button
+                className={`btn btn-success btn-md border ${
+                  activeButton === 4 ? "btn-success" : "btn-light"
+                } flex-fill`}
+                onClick={() => handleButtonClick(4)}
               >
                 Otros datos
               </button>
             </div>
             {activeButton === 1 && <FormDataPerson />}
-            {activeButton === 2 && <FormDataEmpl />}
-            {activeButton === 3 && <FormDataOtros />}
+            {activeButton === 2 && <FormContact />}
+            {activeButton === 3 && <FormDataEmpl />}
+            {activeButton === 4 && <FormDataOtros />}
         </div>
       </div>
 
