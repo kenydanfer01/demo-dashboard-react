@@ -1,6 +1,7 @@
 import { SectionWizard } from "./SectionWizard";
 import { useState } from "react";
 import WizarEmpleado from "./WizarEmpleado";
+import { NavWizard } from "./NavWizar";
 
 export const Wizard = () => {
   let sectionName = ["Section 1", "Section 2"];
@@ -11,7 +12,8 @@ export const Wizard = () => {
   };
   return (
     <>
-      <div className="container-fluid pt-0">
+      {/* <SectionWizard sectionName={(sectionName = 1)} /> */}
+      <div className="container-fluid px-0">
         <div className="d-flex flex-column flex-sm-row justify-content-between my-2">
           <button
             className={`btn btn-primary btn-md border ${
@@ -30,21 +32,17 @@ export const Wizard = () => {
             Informacion Empleado
           </button>
         </div>
-        <div className="row">
-          <div className="col-12">
-            {activeButton === 1 && (
-              <>
-                <SectionWizard sectionName={(sectionName = 1)} />
-              </>
-            )}
-            {activeButton === 2 && (
-              <>
-                <WizarEmpleado />
-              </>
-            )}
-          </div>
-        </div>
       </div>
+        {activeButton === 1 && (
+          <>
+            <SectionWizard sectionName={(sectionName = 1)} />
+          </>
+        )}
+        {activeButton === 2 && (
+          <>
+            <WizarEmpleado />
+          </>
+        )}
     </>
   );
 };
