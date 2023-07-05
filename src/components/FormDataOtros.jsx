@@ -25,7 +25,7 @@ export const FormDataOtros = () => {
 
               <div className="form-floating mb-3">
                 <select className="form-select col-md" id="estadocivil" required="">
-                  <option value="">Seleccionar estado</option>
+                  <option value=""></option>
                   <option>Soltero(a)</option>
                   <option>Casado(a)</option>
                   <option>Viudo(a)</option>
