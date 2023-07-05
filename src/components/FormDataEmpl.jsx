@@ -118,7 +118,7 @@ export const FormDataEmpl = () => {
                         </div>
                     </div>
                     <div className="row col-lg-1 m-5">
-                        <button className="btn btn-success" id="btnGuardar">Guardar Datos</button>
+                        <button className="btn btn-success" id="btnGuardar">Guardar</button>
                     </div>
                 </div>
             </div>
