@@ -1,9 +1,9 @@
 export const FormDataPerson = () => {
   return (
     <div className="container-fluid border rounded bg-light p-0">
-      <div className="bg-light m-5">
+      <div className="col-md-12 col-lg-12 ">
         <form>
-          <div className="row  ">
+          <div className="row m-4">
           <h5 className="text-start my-4">Datos de Nacimiento</h5>
             <div className="col-6 ">
               <label className="form-label">Fecha de Nacimiento</label>
@@ -23,7 +23,7 @@ export const FormDataPerson = () => {
             </div>
           </div>
 
-          <div className="row ">
+          <div className="row m-4">
           <h5 className="text-start my-4">Domicilio y Referencia</h5>
             <div className="col-6">
               <div className="mb-3">
