@@ -44,9 +44,11 @@ export const Wizard = () => {
                 </div>
               </>
             )}
-            {activeButton === 2 && <>
+            {activeButton === 2 && (
+              <>
                 <WizarEmpleado />
-            </>}
+              </>
+            )}
           </div>
         </div>
       </div>
