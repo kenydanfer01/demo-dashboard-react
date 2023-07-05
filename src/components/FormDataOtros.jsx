@@ -1,120 +1,119 @@
-
-
 export const FormDataOtros = () => {
   return (
-    <div className='container-fluid border rounded bg-light p-0'>
-      <div className="col-md-12 col-lg-12 bg-light p-0">
-        <form className="needs-validation" noValidate="">
-          <div className="container row mx-auto justify-content-around mx-3">
-
-            <h5 className="text-start my-5">Otros Datos</h5>
-            <div className="col-sm-12 col-md-auto ">
-
-              <div className="form-floating mb-3">
-                <select className="form-select" id="profession" required>
-                  <option selected>Seleccionar profesion</option>
-                  <option value="1">Developer BackEnd</option>
-                  <option value="2">Developer FrontEnd</option>
-                  <option value="3">Developer FullStack</option>
-                </select>
-                <label htmlFor="profession" >Profesion</label>
-                <div className="invalid-feedback">
-                  Please select a profession.
+    <>
+      <div className="container-fluid border rounded bg-light p-0">
+        <div className="col-md-12 col-lg-12 ">
+          <div className="row mx-3 mt-3">
+            <h5 className="text-start my-3">Otros Datos</h5>
+            <div className="col-lg-6">
+              <label className="form-label">Profesión:</label>
+              <div className="col mb-3">
+                <div className="input-group w-100">
+                  <label className="input-group-text" htmlFor="inputGroupSelect01">
+                    <i className="fa-solid fa-caret-down"></i>
+                  </label>
+                  <select className="form-select" id="inputGroupSelect01">
+                    <option value=""></option>
+                    <option>Soltero(a)</option>
+                    <option>Casado(a)</option>
+                    <option>Viudo(a)</option>
+                    <option>Divorciado(a)</option>
+                    <option>Separado(a)</option>
+                    <option>Conviviente(a)</option>
+                  </select>
                 </div>
               </div>
-
-              <div className="form-floating mb-3">
-                <select className="form-select col-md" id="estadocivil" required="">
-                  <option value="">Seleccionar estado</option>
-                  <option>Soltero(a)</option>
-                  <option>Casado(a)</option>
-                  <option>Viudo(a)</option>
-                  <option>Divorciado(a)</option>
-                  <option>Separado(a)</option>
-                  <option>Conviviente(a)</option>
-                </select>
-                <label htmlFor="estadocivil" className="form-label">Estado Civil</label>
-
-                <div className="invalid-feedback">
-                  Please select a state.
+              <label className="form-label">Estado Civil:</label>
+              <div className="col mb-3">
+                <div className="input-group w-100">
+                  <label className="input-group-text" htmlFor="inputGroupSelect01">
+                    <i className="fa-solid fa-caret-down"></i>
+                  </label>
+                  <select className="form-select" id="inputGroupSelect01">
+                    <option>Elegir</option>
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                  </select>
                 </div>
               </div>
-
-              <div className="form-floating mb-3">
-                <select className="form-select col-md" id="estadocivil" required="">
-                  <option value="">Elegir</option>
-                  <option>Si</option>
-                  <option>No</option>
-                </select>
-                <label htmlFor="estadocivil" className="form-label">Brevete</label>
-                <div className="invalid-feedback">
-                  Please select option.
+              <label className="form-label">Brevete:</label>
+              <div className="col mb-3">
+                <div className="input-group w-100">
+                  <label className="input-group-text" htmlFor="inputGroupSelect01">
+                    <i className="fa-solid fa-caret-down"></i>
+                  </label>
+                  <select className="form-select" id="inputGroupSelect01">
+                    <option>Elegir</option>
+                    <option>Si</option>
+                    <option>No</option>
+                  </select>
                 </div>
               </div>
-
-              <div className="form-floating mb-3">
-                <input type="text" className="form-control" id="username" placeholder="N° Brevete" required="" />
-                <div className="invalid-feedback">
-                  Your number is required.
-                </div>
-                <label htmlFor="username" className="form-label">Número de Brevete</label>
-
+              <label className="form-label">Numero Brevete:</label>
+              <div className="input-group flex-nowrap mb-3">
+                <span className="input-group-text" id="addon-wrapping">
+                  <i className="fa-regular fa-keyboard"> </i>
+                </span>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="addon-wrapping"
+                />
               </div>
-
             </div>
-
-            <div className="col-sm-12 col-md-auto">
-
-              <div className="form-floating mb-3">
-                <select className="form-select col-md" id="gruposanguineo" required="">
-                  <option value="">Seleccione grupo</option>
-                  <option>O-</option>
-                  <option>A</option>
-                  <option>B</option>
-                  <option>AB</option>
-                  <option>O</option>
-                  <option>A+</option>
-                  <option>B+</option>
-                  <option>O+</option>
-                </select>
-                <label htmlFor="gruposanguineo" className="form-label">Grupo Sanguíneo</label>
-
-                <div className="invalid-feedback">
-                  Please select one.
+            <div className="col-lg-6">
+              <label className="form-label">Grupo Sanguíneo:</label>
+              <div className="col mb-3">
+                <div className="input-group w-100">
+                  <label className="input-group-text" htmlFor="inputGroupSelect01">
+                    <i className="fa-solid fa-caret-down"></i>
+                  </label>
+                  <select className="form-select" id="inputGroupSelect01">
+                    <option value="">Seleccione grupo</option>
+                    <option>O-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>AB</option>
+                    <option>O</option>
+                    <option>A+</option>
+                    <option>B+</option>
+                    <option>O+</option>
+                  </select>
                 </div>
               </div>
-
-
-              <div className="form-floating mb-3">
-                <input type="date" className="form-control" id="fecha" name="fecha" />
-                <label htmlFor="fecha" className="form-label">Fecha de Matrimonio:</label>
+              <label className="form-label">Fecha de Matrimonio:</label>
+              <div className="input-group flex-nowrap mb-3">
+                <span className="input-group-text" id="addon-wrapping">
+                  <i className="fa-regular fa-calendar-days"></i>
+                </span>
+                <input
+                  type="date"
+                  className="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="addon-wrapping"
+                />
               </div>
-
-
-              <div className="form-floating mb-3">
-                <select className="form-select col-md" id="estadopersona" required="">
-                  <option value="">Elegir</option>
-                  <option>Si</option>
-                  <option>No</option>
-                </select>
-                <label htmlFor="country" className="form-label">Fallecido</label>
-                <div className="invalid-feedback">
-                  Please select option.
+              <label className="form-label">Fallecido:</label>
+              <div className="col mb-3">
+                <div className="input-group w-100">
+                  <label className="input-group-text" htmlFor="inputGroupSelect01">
+                    <i className="fa-solid fa-caret-down"></i>
+                  </label>
+                  <select className="form-select" id="inputGroupSelect01">
+                    <option>Elegir</option>
+                    <option>Si</option>
+                    <option>No</option>
+                  </select>
                 </div>
               </div>
-
             </div>
           </div>
-          <button className="btn btn btn-success btn-md m-5" type="submit">Guardar</button>
-
-        </form>
-
-
-
-
-
+        </div>
       </div>
-
-    </div>
-  )
-}
+    </>
+  );
+};
