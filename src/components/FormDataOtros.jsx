@@ -5,10 +5,10 @@ export const FormDataOtros = () => {
     <div className='container-fluid border rounded bg-light p-0'>
       <div className="col-md-12 col-lg-12 bg-light p-0">
         <form className="needs-validation" noValidate="">
-          <div className="container row mx-auto justify-content-around mx-3">
+          <div className="row mx-3">
 
             <h5 className="text-start my-5">Otros Datos</h5>
-            <div className="col-sm-12 col-md-auto ">
+            <div className="col-sm-12 col-md-6 ">
 
               <div className="form-floating mb-3">
                 <select className="form-select" id="profession" required>
@@ -25,7 +25,7 @@ export const FormDataOtros = () => {
 
               <div className="form-floating mb-3">
                 <select className="form-select col-md" id="estadocivil" required="">
-                  <option value="">Seleccionar estado</option>
+                  <option value=""></option>
                   <option>Soltero(a)</option>
                   <option>Casado(a)</option>
                   <option>Viudo(a)</option>
@@ -63,7 +63,7 @@ export const FormDataOtros = () => {
 
             </div>
 
-            <div className="col-sm-12 col-md-auto">
+            <div className="col-sm-12 col-md-6">
 
               <div className="form-floating mb-3">
                 <select className="form-select col-md" id="gruposanguineo" required="">
