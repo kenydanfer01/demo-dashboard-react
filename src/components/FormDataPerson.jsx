@@ -1,35 +1,31 @@
 export const FormDataPerson = () => {
   return (
     <div className="container-fluid border rounded bg-light p-0">
-      <div className="bg-light p-4 border rounded">
+      <div className="bg-light m-5">
         <form>
-          <h4 className="text-start my-4">Datos de Nacimiento</h4>
-          <div className="row">
-            <div className="col">
-              <div className="mb-3">
-                <label className="form-label">Fecha de Nacimiento</label>
-                <input
-                  type="date"
-                  className="form-control"
-                  id="fechaNacimiento"
-                  name="fechaNacimiento"
-                />
-              </div>
+          <div className="container row mx-auto justify-content-around">
+          <h5 className="text-start my-4">Datos de Nacimiento</h5>
+            <div className="col-auto ">
+              <label className="form-label">Fecha de Nacimiento</label>
+              <input
+                type="date"
+                className="form-control"
+                id="fechaNacimiento"
+                name="fechaNacimiento"
+              />
             </div>
-            <div className="col">
-              <div className="mb-3">
-                <label className="form-label">Sexo</label>
-                <select className="form-select" id="sexo" name="sexo">
-                  <option value="masculino">Masculino</option>
-                  <option value="femenino">Femenino</option>
-                </select>
-              </div>
+            <div className="col-auto">
+              <label className="form-label">Sexo</label>
+              <select className="form-select" id="sexo" name="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+              </select>
             </div>
           </div>
 
-          <h4 className="text-start my-4">Domicilio y Referencia</h4>
-          <div className="row">
-            <div className="col">
+          <div className="container row mx-auto justify-content-around ">
+          <h5 className="text-start my-4">Domicilio y Referencia</h5>
+            <div className="col-auto">
               <div className="mb-3">
                 <label className="form-label">Nacionalidad</label>
                 <select
@@ -63,7 +59,7 @@ export const FormDataPerson = () => {
                 </select>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-auto">
               <div className="mb-3">
                 <label className="form-label">Distrito</label>
                 <select className="form-select" id="distrito" name="distrito">

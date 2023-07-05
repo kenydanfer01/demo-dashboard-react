@@ -2,10 +2,10 @@ export const FormDataEmpl = () => {
     return (
         <>
             <div className="container-fluid border rounded bg-light p-0">
-                <div className="col-md-12 col-lg-12 border rounded-3">
+                <div className="col-md-12 col-lg-12 ">
                     <div className="row m-4">
                         {/* Seccion 1 */}
-                        <h3>Datos del trabajador</h3>
+                        <h4 className="text-start my-4">Datos del trabajador</h4>
                         <div className="col-lg-6">
                             <label className="form-label">Estado</label>
                             <div className="col mb-3">
@@ -54,7 +54,7 @@ export const FormDataEmpl = () => {
                     </div>
                     {/* Seccion 2 */}
                     <div className="row m-4">
-                        <h3>Pensión</h3>
+                        <h4>Pensión</h4>
                         <div className="col-lg-6">
                             <label className="form-label">Régimen</label>
                             <input type="text" className="form-control w-100 mb-4" placeholder="Selecciona Motivo" />
@@ -64,7 +64,7 @@ export const FormDataEmpl = () => {
                     </div>
                     {/* Seccion 3 */}
                     <div className="row m-4">
-                        <h3>Datos Organizacionales</h3>
+                        <h4>Datos Organizacionales</h4>
                         <div className="col-lg-6">
                             <label className="form-label">Planilla</label>
                             <div className="input-group mb-3 w-100">

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FormDataEmpl } from "../components/FormDataEmpl";
 import { FormDataPerson } from "../components/FormDataPerson";
 import FormPerfil from "../components/FormPerfil";
+import { FormDataOtros } from "../components/FormDataOtros";
 
 function CreateEmployed() {
   const [activeButton, setActiveButton] = useState(1);
@@ -42,7 +43,7 @@ function CreateEmployed() {
             </div>
             {activeButton === 1 && <FormDataPerson />}
             {activeButton === 2 && <FormDataEmpl />}
-            {activeButton === 3 && <FormDataEmpl />}
+            {activeButton === 3 && <FormDataOtros />}
         </div>
       </div>
 
