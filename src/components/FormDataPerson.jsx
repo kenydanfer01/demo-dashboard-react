@@ -14,7 +14,7 @@ export const FormDataPerson = () => {
                 name="fechaNacimiento"
               />
             </div>
-            <div className="col-auto">
+            <div className="col-6">
               <label className="form-label">Sexo</label>
               <select className="form-select" id="sexo" name="sexo">
                 <option value="masculino">Masculino</option>
@@ -59,7 +59,7 @@ export const FormDataPerson = () => {
                 </select>
               </div>
             </div>
-            <div className="col-auto">
+            <div className="col-6">
               <div className="mb-3">
                 <label className="form-label">Distrito</label>
                 <select className="form-select" id="distrito" name="distrito">

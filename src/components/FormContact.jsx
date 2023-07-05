@@ -70,7 +70,7 @@ export const FormContact = () => {
         </div>
 
 
-        <h3 className="card-title">Datos Contacto</h3>
+        
 
         <style>
           {`
