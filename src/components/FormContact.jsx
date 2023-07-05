@@ -3,90 +3,97 @@
 export const FormContact = () => {
   return (
     <>
-      <div className="container-fluid border rounded-3 bg-light mt-5 p-3">
-    
-
-        <div className="container row mx-auto justify-content-around ">
-          <h5 className="text-start my-4">Datos Contacto</h5>
-          <div className="col-auto">
-            <div className="mb-3">
-              <label className="form-label fw-bold">Correo Personal</label>
-              <input
-                type="text"
-                className="form-control rounded-4"
-                placeholder="Ingrese correo"
-                name="Correo Personal"
-              />
-            </div>
-            <div className="mb-3">
-              <label className="form-label fw-bold">Correo Empresa</label>
-              <div className="col-lg-12">
+      <div className="container-fluid border rounded bg-light p-0">
+        <div className="col-md-12 col-lg-12 ">
+          <div className="row mx-3 mt-3">
+            <h5 className="text-start my-3">Datos de Contacto</h5>
+            <div className="col-lg-6">
+              <label className="form-label">Correo Personal:</label>
+              <div className="input-group flex-nowrap mb-3">
+                <span className="input-group-text" id="addon-wrapping">
+                  <i className="fa-regular fa-envelope"></i>
+                </span>
                 <input
                   type="text"
-                  className="form-control rounded-4"
-                  placeholder="Ingrese correo"
-                  name="email"
+                  className="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="addon-wrapping"
+                />
+              </div>
+              <label className="form-label">Correo Empresa:</label>
+              <div className="input-group flex-nowrap mb-3">
+                <span className="input-group-text" id="addon-wrapping">
+                  <i className="fa-regular fa-envelope"></i>
+                </span>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="addon-wrapping"
+                />
+              </div>
+              <label className="form-label">Celular:</label>
+              <div className="input-group flex-nowrap mb-3">
+                <span className="input-group-text" id="addon-wrapping">
+                  <i className="fa-solid fa-mobile-screen-button"></i>
+                </span>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="addon-wrapping"
                 />
               </div>
             </div>
-            <div className="mb-3">
-              <label className="form-label fw-bold">Celular</label>
-              <div className="col-lg-12">
-                <input type="text" className="form-control rounded-4" placeholder="956236489" name="email" />
-              </div>
-            </div>
-          </div>
-          <div className="col-auto">
-            <div className="mb-3">
-              <label className="form-label fw-bold">Doc. Cuarta Categoría</label>
-              <div class="container">
-                <div class="dropdown">
-                  <button class="btn btn-gray border-secondary bg-white dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    Elegir
-                  </button>
-                  <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#">1</a></li>
-                    <li><a class="dropdown-item" href="#">2</a></li>
-                    <li><a class="dropdown-item" href="#">3</a></li>
-                    <li><a class="dropdown-item" href="#">4</a></li>
-                  </ul>
+            <div className="col-lg-6">
+              <label className="form-label">Doc. cuarta Categoría:</label>
+              <div className="col mb-3">
+                <div className="input-group w-100">
+                  <label className="input-group-text" htmlFor="inputGroupSelect01">
+                    <i className="fa-solid fa-caret-down"></i>
+                  </label>
+                  <select className="form-select" id="inputGroupSelect01">
+                    <option>Elegir</option>
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                  </select>
                 </div>
               </div>
-            </div>
-            <div className="mb-3">
-              <label className="form-label fw-bold">Planilla</label>
-              <select className="form-select" id="planilla" name="planilla">
-                <option>Planilla</option>
-                <option>Recibo por Honorarios</option>
-              </select>
-            </div>
-            <div className="mb-3">
-              <label className="form-label fw-bold">Codigo Usuario</label>
-              <div className="col-lg-8">
-                <input type="password" className="form-control rounded-4" placeholder="Ingrese código" name="pswd" />
+              <label className="form-label">Planilla:</label>
+              <div className="col mb-3">
+                <div className="input-group w-100">
+                  <label className="input-group-text" htmlFor="inputGroupSelect01">
+                    <i className="fa-solid fa-caret-down"></i>
+                  </label>
+                  <select className="form-select" id="inputGroupSelect01">
+                    <option>Elegir</option>
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                  </select>
+                </div>
+              </div>
+              <label className="form-label">Código Usuario:</label>
+              <div className="input-group flex-nowrap mb-3">
+                <span className="input-group-text" id="addon-wrapping">
+                  <i className="fa-regular fa-keyboard"> </i>
+                </span>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="addon-wrapping"
+                />
               </div>
             </div>
           </div>
         </div>
-
-
-        
-
-        <style>
-          {`
-            .form-control::placeholder {
-              color: #999999; /* Color plomo */
-          `}
-        </style>
-
-       
-       
-
-
-       
-
       </div>
-
     </>
   );
 };
