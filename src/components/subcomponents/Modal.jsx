@@ -7,7 +7,7 @@ export const ModalWizard = () => {
         <>
             <div className="container">
                 <div className="card">
-                    
+
                         <HeadModal />
                         <Wizard />
                 </div>
