@@ -5,10 +5,11 @@ export const ModalWizard = () => {
 
     return (
         <>
-            <div className="row m-3">
-                <HeadModal />
-                <Wizard />
-            </div>
+                <div className="card m-2">
+                        <HeadModal />
+                        <Wizard />
+                </div>
+
         </>
     )
 }

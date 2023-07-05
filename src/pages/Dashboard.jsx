@@ -50,7 +50,7 @@ function Dashboard() {
                     <i className="fas fa-search"></i>
                   </button>
                   <div className="modal fade" id="exampleModal" tabIndex="-1">
-                    <div className="modal-dialog" style={{ maxWidth: "650px" }}>
+                    <div className="modal-dialog" style={{ maxWidth: "980px" }}>
                       <div
                         className="modal-content"
                         style={{ backgroundColor: "#F1F1F1" }}
