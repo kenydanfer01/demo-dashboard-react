@@ -46,7 +46,7 @@ export const HeadModal = () => {
               <h3 className="col-md-7 col-10">{user_data.nombre}</h3>
               <h3 className="col-md-2 col-2">{user_data.nacionalidad}</h3>
               <div className="col-md-3 col-12 d-none d-md-block">
-                <button className="btn btn-secondary  ">Editar</button>
+                <button className="btn btn-secondary  "><LuEdit />Editar</button>
               </div>
             </div>
             <div className="row">
