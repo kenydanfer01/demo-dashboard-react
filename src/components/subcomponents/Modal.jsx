@@ -5,17 +5,10 @@ export const ModalWizard = () => {
 
     return (
         <>
-            <div className="container">
-                <div className="card">
-
+                <div className="card m-2">
                         <HeadModal />
                         <Wizard />
                 </div>
-
-
-            </div>
-
-
 
         </>
     )
