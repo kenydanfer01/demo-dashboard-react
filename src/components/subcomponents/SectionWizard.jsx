@@ -4,7 +4,7 @@ export const SectionWizard = ({ sectionName }) => {
 
     return (
         <>
-            <h1>Section {sectionName}</h1>
+            <h3>Section {sectionName}</h3>
 
             <CardWizard />
             <CardWizard />
