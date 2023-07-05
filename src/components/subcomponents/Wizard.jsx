@@ -6,18 +6,7 @@ export const Wizard = () => {
     return (
         <>
             <NavWizard />
-            <div className="container row">
-                <div className="col-12 col-md-6">
-                    <SectionWizard sectionName={sectionName = 1} />
-                </div>
-                <div className="col-12 col-md-6">
-                    <SectionWizard sectionName={sectionName = 2} />
-                </div>
-            </div>
-
-
-
-
+            <SectionWizard sectionName={sectionName = 1} />
 
         </>
     )
