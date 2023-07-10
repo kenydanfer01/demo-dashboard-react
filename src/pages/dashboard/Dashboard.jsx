@@ -1,5 +1,5 @@
-import { ViewUser } from "../components/ViewUser";
-import { EmployeList } from "../components/data/EmployedList";
+import { ViewUser } from "./ViewUser";
+import { EmployeList } from "../../components/data/EmployedList";
 
 function Dashboard() {
   return (

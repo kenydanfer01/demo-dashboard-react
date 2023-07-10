@@ -1,10 +1,9 @@
-import "../../assets/css/sidebar.css";
+import "./baseTemplate.css";
 import { useState } from "react";
-import FormPerfil from "../FormPerfil";
 import { ItemsMenuData } from "../data/ItemsMenuData";
 import ContentMainRoutes from "../../routes/ContentMainRoutes";
 
-function Sidebar() {
+function BaseTemplate() {
   const [sidebar, setSidebar] = useState(true);
   const showSidebar = () => setSidebar(!sidebar);
 
@@ -71,4 +70,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default BaseTemplate;

@@ -1,10 +1,10 @@
-import Sidebar from "./components/layout/Sidebar";
+import BaseTemplate from "./components/layout/baseTemplate";
 import './App.css';
 
 function App() {
   return (
     <>
-      <Sidebar />
+      <BaseTemplate />
     </>
   );
 }

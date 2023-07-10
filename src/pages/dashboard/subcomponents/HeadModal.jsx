@@ -1,4 +1,4 @@
-import user_data from "../data/profile.json";
+import user_data from "../../../components/data/profile.json";
 import {
   MdAlternateEmail,
   MdPerson2,
@@ -6,7 +6,6 @@ import {
   MdLocalPhone,
 } from "react-icons/md";
 import { LuEdit } from "react-icons/lu";
-import { AiFillCloseCircle } from "react-icons/ai";
 
 export const HeadModal = () => {
   return (
@@ -30,18 +29,18 @@ export const HeadModal = () => {
             ></button>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 col-12">
+        <div className="row">
+          <div className="col-md-4 col-12">
             <div className="text-center">
               <img
                 src={user_data.foto}
-                class="img-fluid"
+                className="img-fluid"
                 alt="Foto de perfil"
               />
             </div>
             <h5 className="m-0 text-center">DNI:{user_data.documento.dni}</h5>
           </div>
-          <div class="col-md-8 col-12">
+          <div className="col-md-8 col-12">
             <div className=" row d-flex align-items-center ">
               <h3 className="col-md-7 col-10">{user_data.nombre}</h3>
               <h3 className="col-md-2 col-2">{user_data.nacionalidad}</h3>

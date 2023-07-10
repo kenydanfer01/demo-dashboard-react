@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { FormDataEmpl } from "../components/FormDataEmpl";
-import { FormDataPerson } from "../components/FormDataPerson";
-import FormPerfil from "../components/FormPerfil";
-import { FormDataOtros } from "../components/FormDataOtros";
-import { FormContact } from "../components/FormContact";
+import { FormDataEmpl } from "./FormDataEmpl";
+import { FormDataPerson } from "./FormDataPerson";
+import FormPerfil from "./FormPerfil";
+import { FormDataOtros } from "./FormDataOtros";
+import { FormContact } from "./FormContact";
 
 function CreateEmployed() {
   const [activeButton, setActiveButton] = useState(1);
